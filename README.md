@@ -10,3 +10,16 @@ Figure 7.7. After construction, ninja1 has the property swung, and its prototype
 (TBU)
 Done.
 need to do exercise.
+
+
+
+## Chapter 12. Working the DOM
+interpret self closing tags.
+```
+const tags= /^(area|base|br|col|embed|hr|img|input|keygen|link|menuitem|meta|param|source|track|wbr)$/i;
+function convert(html){
+  return html.replace(/(<(\w+)[^>]*?)\/>/g,(all,front,tag)=>{
+    return tags.test(tag)?all:front+"></"+tag+">";
+  })
+}
+```
