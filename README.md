@@ -23,3 +23,10 @@ function convert(html){
   })
 }
 ```
+
+### 12.2. Using DOM attributes and properties
+```
+e.getAttribute('id')
+e.id
+```
+that the property and attribute are sharing the same value—they aren’t.
